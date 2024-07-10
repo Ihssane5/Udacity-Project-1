@@ -1,0 +1,73 @@
+Command Line Arguments:
+     dir = uploaded_images 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                  Beagle_02.jpg  label:                     beagle
+ 2 key:                       Cube.jpg  label:                       cube
+ 3 key:                   eagle_01.jpg  label:                      eagle
+ 4 key:                Malinois_01.jpg  label:                   malinois
+
+     MATCH:
+
+                  eagle_01.jpg: 
+Real:                      eagle   Classifier: bald eagle, american eagle, haliaeetus leucocephalus
+
+               Malinois_01.jpg: 
+Real:                   malinois   Classifier:                       malinois
+
+ NOT A MATCH:
+
+                 Beagle_02.jpg: 
+Real:                     beagle   Classifier:  walker hound, walker foxhound
+
+                      Cube.jpg: 
+Real:                       cube   Classifier:                          crate
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+     MATCH:
+
+                  eagle_01.jpg: 
+Real:                      eagle   Classifier: bald eagle, american eagle, haliaeetus leucocephalus  
+PetLabelDog: 0  ClassLabelDog: 0
+
+               Malinois_01.jpg: 
+Real:                   malinois   Classifier:                       malinois  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+                 Beagle_02.jpg: 
+Real:                     beagle   Classifier:  walker hound, walker foxhound  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                      Cube.jpg: 
+Real:                       cube   Classifier:                          crate  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+
+*** Results Summary for CNN Model Architecture VGG ***
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images    :   2
+
+
+*** Results Summary statistics (percentages) for CNN Model Architecture VGG ***
+pct_match           : 50.000000
+
+pct_correct_dogs    : 100.000000
+
+pct_correct_breed   : 50.000000
+
+pct_correct_notdogs : 100.000000
+
+
+INCORRECT Dog Breed Assignment:
+Real:                     beagle   Classifier:  walker hound, walker foxhound
+
+** Total Elapsed Runtime: 0:0:0
